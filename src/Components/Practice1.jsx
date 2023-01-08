@@ -50,6 +50,8 @@ const Practice1 = () => {
             <div key={i.id}>
               <Link to={`pr2/${i.id}`}>
                 <img style={{ cursor: "pointer" }} src={i.image} />
+                <p>{i.price}</p>
+                <p>{i.name}</p>
               </Link>
             </div>
 

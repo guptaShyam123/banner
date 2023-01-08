@@ -8,9 +8,9 @@ const Baby = () => {
   const  [cart , setCart]= React.useState([])
   
   const add = (i)=>{
-    const items = data?.filter((x)=> x.id == i.id)
+   
       
-   return setCart([...cart , items])
+    setCart([...cart , i])
     
   }
   console.log(cart)
@@ -30,6 +30,7 @@ const Baby = () => {
         )
       })
      }
+     <p>cart</p>
      {
       cart?.map((i)=>{
    return(
